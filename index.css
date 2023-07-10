@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.header {
+  box-shadow: 8px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.logo__link {
+  font-weight: bolder;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.blue a {
+  color: blue;
+}
+
+.nav__item:not(:last-child) {
+  padding-right: 2rem;
+  border-right: 1px solid black;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.listBooks {
+  border: 1px solid #000;
+  height: 50vh;
+  overflow: scroll;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  list-style: none;
+}
+
+.book:nth-child(odd) {
+  background-color: #eee;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+}
+
+.titleInput,
+.authorInput {
+  padding: 15px 31px;
+  border: 1px solid black;
+  width: 100px;
+  width: 350px;
+}
+
+.removeBook {
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-left: auto;
+  box-shadow: 5px 6px 4px 0 rgba(0, 0, 0, 1);
+}
+
+.addButton {
+  padding: 15px 30px;
+  box-shadow: 5px 6px 4px 0 rgba(0, 0, 0, 1);
+}
+
+.footer {
+  background-color: #eee;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.booksList {
+  display: none;
+}
+
+.forms {
+  display: none;
+}
+
+.contacts {
+  display: none;
+}
+
+.contactCenter {
+  height: 50vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.contactPara {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.contactItem {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.active {
+  display: block;
+}
+
+.currentDate {
+  text-align: right;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
