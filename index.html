@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Awesome books</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="#" class="logo__link">awesome books</a>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item blue" data-id="booksList">
+              <a href="#" class="nav__link">List</a>
+            </li>
+            <li class="nav__item" data-id="forms">
+              <a href="#" class="nav__link">Add new</a>
+            </li>
+            <li class="nav__item" data-id="contacts">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="booksList dynamic active">
+          <h1>All awesome books</h1>
+          <div class="listBooks"></div>
+        </div>
+
+        <div class="forms dynamic">
+          <form class="form">
+            <h2>Add a new Book</h2>
+            <input
+              type="text"
+              class="titleInput"
+              placeholder="Add Title Of Book"
+            />
+            <input
+              type="text"
+              class="authorInput"
+              placeholder="Add Name of Author"
+            />
+            <button class="addButton">Add</button>
+          </form>
+        </div>
+
+        <div class="contacts dynamic">
+          <h1>contact information</h1>
+          <div class="contactCenter">
+            <p class="contactPara">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              iusto maxime suscipit veritatis ea, delectus quos corrupti
+            </p>
+            <ul class="contactList">
+              <li class="contactItem">Our e-mail: mail@mail.com</li>
+              <li class="contactItem">Our phone number: 004541255585445</li>
+              <li class="contactItem">
+                Our address: Lorem ipsum dolor sit amet.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          Copyright © 2023 Awesome books. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
