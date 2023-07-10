@@ -1,5 +1,3 @@
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
-
 export default class BookList {
   constructor() {
     this.form = document.querySelector('.form');
@@ -10,8 +8,6 @@ export default class BookList {
     this.navItems = document.querySelectorAll('.nav__item');
     this.contentDynamic = document.querySelectorAll('.dynamic');
     this.books = JSON.parse(localStorage.getItem('books')) || [];
-
-    this.init();
   }
 
   init = () => {
@@ -89,11 +85,4 @@ export default class BookList {
       }
     });
   };
-
-   displayCurrentDate = () => {
-     const header = document.querySelector('.header');
-     const currentDate = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
-     const htmlDate = `<div class="currentDate">${currentDate}</div>`;
-     header.insertAdjacentHTML('afterend', htmlDate);
-   }
 }
