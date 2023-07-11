@@ -14,7 +14,6 @@ export default class BookList {
     this.form.addEventListener('submit', this.handleFormSubmit);
     this.navItems.forEach((link) => link.addEventListener('click', this.handleContent));
     this.renderBooks();
-    this.displayCurrentDate();
   };
 
   renderBooks = () => {

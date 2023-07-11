@@ -79,7 +79,7 @@ Clone this repository to your desired folder by running the following commands i
 ```sh
   cd your-prefered-folder-name
 
-  git clone git@github.com:ahmidou09/Awesome-books.git
+  git clone git@github.com:ahmidou09/awesome-books-app.git
 ```
 
 ### Install
